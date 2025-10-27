@@ -84,12 +84,12 @@ export default function ContactUsForm() {
 
   const form = useForm({
     defaultValues: {
-      name: "John Doe",
-      companyName: "Artisan",
-      email: "john@artisan.com",
-      phone: "+225 00 00 00 00 00",
-      subject: "Commande",
-      message: "Bonjour, je souhaite commander ...",
+      name: "",
+      companyName: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
     },
     validators: { onSubmit: formSchema },
 
