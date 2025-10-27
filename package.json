@@ -2,10 +2,11 @@
   "name": "yd.dmc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://localhost:3000",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "eslint",
     "postbuild": "next-sitemap --config next-sitemap.config.ts"
   },
