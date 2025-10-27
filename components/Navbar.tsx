@@ -34,7 +34,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex justify-between items-center px-6">
         <Link href="/">
-          <Image src="/LOGO_DMC.png" alt="Logo" width={100} height={100} />
+          <Image src="/WHITE_LOGO_DMC.png" alt="Logo" width={100} height={100} />
         </Link>
 
         {/* Bouton burger (mobile) */}
