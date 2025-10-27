@@ -4,6 +4,7 @@ import navlinks from "@/mock/navlinks.json";
 import Image from "next/image";
 import DesktopMenu from "@/components/menu/DesktopMenu";
 import MobileMenu from "./menu/MobileMenu";
+import Link from "next/link";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
@@ -32,7 +33,9 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center px-6">
-        <Image src="/WHITE_LOGO_DMC.png" alt="Logo" width={100} height={100} />
+        <Link href="/">
+          <Image src="/LOGO_DMC.png" alt="Logo" width={100} height={100} />
+        </Link>
 
         {/* Bouton burger (mobile) */}
         <MobileMenu items={navlinksFiltered} />
