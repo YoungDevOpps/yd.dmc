@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/",
+    "label": "Accueil"
+  },
+  {
+    "path": "/about",
+    "label": "A propos"
+  },
+  {
+    "path": "/our-activities",
+    "label": "Nos activités"
+  },
+  {
+    "path": "/contact-us",
+    "label": "Contact"
+  }
+]

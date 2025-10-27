@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+::selection {
+  background-color: #3d3d3d1e; /* couleur du fond */
+  color: #000; /* couleur du texte sélectionné */
+}

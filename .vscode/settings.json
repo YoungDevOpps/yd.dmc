@@ -1,0 +1,19 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#000000",
+    "titleBar.inactiveBackground": "#000000",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveForeground": "#ffffff"
+  },
+  "cSpell.language": "en,fr",
+  "cSpell.enabled": true,
+  "cSpell.allowCompoundWords": true,
+  "cSpell.userWords": [
+    "Nextjs",
+    "Tailwind",
+    "TypeScript",
+    "Développeur",
+    "React"
+  ],
+  "cSpell.words": ["Magloire"]
+}

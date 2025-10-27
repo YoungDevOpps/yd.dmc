@@ -1,0 +1,117 @@
+[
+  {
+    "id": "7bccf2e3-3122-4bee-9ac4-b8e76697fe76",
+    "name": "ivoire ingenierie"
+  },
+  {
+    "id": "180d3b44-39cd-4538-ba9f-374da57014e8",
+    "name": "africa palm industries"
+  },
+  {
+    "id": "1d241e49-b0ef-4355-94e0-f289eb1ab288",
+    "name": "bureau veritas"
+  },
+  {
+    "id": "0bf93c6c-4c16-4ab9-bbd4-052e6e3a4b1a",
+    "name": "africa west industries",
+    "logo": ""
+  },
+  {
+    "id": "c8cf8183-5a52-4b2d-81da-5ba19808db27",
+    "name": "cargill",
+    "logo": ""
+  },
+  {
+    "id": "f08bf5ba-dd31-40fd-b4d4-e74e7e0a8c1f",
+    "name": "cémoi"
+  },
+  {
+    "id": "d11d4da4-4edf-4c66-9a52-a173df8ff267",
+    "name": "compagnie ivoirienne d'électricité",
+    "logo": ""
+  },
+  {
+    "id": "58a4ff62-9090-4d68-94c7-aa19250fdae6",
+    "name": "ciment de l'afrique",
+    "logo": ""
+  },
+  { "id": "de7df6b0-be23-4350-9ac3-d69d3b68c050", "name": "crown" },
+  { "id": "e9d7651b-d458-4b58-84fa-b3b55ecf6a5c", "name": "", "logo": "" },
+  { "id": "b2c9be23-4265-46b6-ac5d-dc31aa9f8736", "name": "", "logo": "" },
+  { "id": "fd2f66b6-b5f0-4e6f-a961-c9bbf060aead", "name": "", "logo": "" },
+  {
+    "id": "91327c11-7654-45ba-8e78-711001feeacf",
+    "name": "endavour mining",
+    "logo": ""
+  },
+  { "id": "8eddd997-31c1-4f49-8d2e-7b56dca4c308", "name": "ibis", "logo": "" },
+  {
+    "id": "77584d0a-7f7a-4181-8372-3397a7802e34",
+    "name": "lafargeholcim",
+    "logo": ""
+  },
+  {
+    "id": "17419090-3058-4c78-b06f-a614ae0c4bc1",
+    "name": "les brasseries ivoiriennes",
+    "logo": ""
+  },
+  {
+    "id": "67dfe8a3-dea3-480b-a7aa-ac6531e1b1c3",
+    "name": "nestlé",
+    "logo": ""
+  },
+  { "id": "3b8112a4-2ade-4eb6-8fb2-374e5293b65e", "name": "olam", "logo": "" },
+  {
+    "id": "c1dae4b3-e770-4e41-b6ae-ac7260fcd2a6",
+    "name": "orange",
+    "logo": ""
+  },
+  {
+    "id": "283c22e1-a321-4902-8ab6-49787bb9bcaf",
+    "name": "palm Afrique",
+    "logo": ""
+  },
+  {
+    "id": "1f35c2c9-224f-4dbe-ac27-9ca25341e2c6",
+    "name": "palmci",
+    "logo": ""
+  },
+  {
+    "id": "5fd7c130-93a8-4204-8e2b-fa1de3b9e6d7",
+    "name": "sania",
+    "logo": ""
+  },
+  {
+    "id": "5fd8856b-f1b7-4b9b-a163-3f7ec0400e97",
+    "name": "pulman",
+    "logo": ""
+  },
+  {
+    "id": "4a362a70-9122-474e-8cf1-16580630d2aa",
+    "name": "société africaine de cacao",
+    "logo": ""
+  },
+  { "id": "cd803458-c927-48f2-b353-2253a8923c76", "name": "sibm", "logo": "" },
+  { "id": "7f319631-1798-4edb-9386-2613a687b84e", "name": "sifca", "logo": "" },
+  {
+    "id": "e2847832-1a31-44ff-9763-e53f5cc8105c",
+    "name": "société ivoirienne de raffinages",
+    "logo": ""
+  },
+  { "id": "01335e34-c7e3-48a3-80c9-54a6a2c1b863", "name": "sogb", "logo": "" },
+  {
+    "id": "a030d2d7-d657-4300-be5b-1ace656db137",
+    "name": "solibra",
+    "logo": ""
+  },
+  {
+    "id": "97063de3-5de4-42fc-9f2b-f7282f567a04",
+    "name": "sotaci",
+    "logo": ""
+  },
+  {
+    "id": "e1f328df-014d-4cf7-9114-f30f32357ed0",
+    "name": "sucrivoire",
+    "logo": ""
+  }
+]

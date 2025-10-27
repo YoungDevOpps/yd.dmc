@@ -1,0 +1,126 @@
+[
+  {
+    "id": "etude",
+    "title": "Étude avant-projet",
+    "description": "Conception technique approfondie pour des installations électriques sur mesure.",
+    "icon": "IconBook2",
+    "details": [
+      {
+        "id": "cctp",
+        "description": "Rédaction des cahiers des clauses techniques particulières."
+      },
+      {
+        "id": "plans",
+        "description": "Conception de schémas électriques détaillés."
+      },
+      {
+        "id": "armoires",
+        "description": "Dimensionnement précis des armoires électriques BT et d’automatisme."
+      },
+      {
+        "id": "dimensionnement",
+        "description": "Dimensionnement complet de la source aux tableaux divisionnaires."
+      }
+    ]
+  },
+  {
+    "id": "installations",
+    "title": "Installations Industrielles, Tertiaires et Domestiques",
+    "description": "Installation et mise en service d’équipements électriques adaptés à divers environnements.",
+    "icon": "IconBuildingFactory2",
+    "details": [
+      {
+        "id": "poste-transfo",
+        "description": "Installation de postes de transformation HT/BT."
+      },
+      {
+        "id": "tgbt",
+        "description": "Mise en place de TGBT et tableaux divisionnaires."
+      },
+      {
+        "id": "cablage",
+        "description": "Câblage et raccordement d’équipements industriels."
+      },
+      {
+        "id": "rehabilitation",
+        "description": "Réhabilitation d’armoires de commande et d’installations électriques existantes."
+      }
+    ]
+  },
+  {
+    "id": "automatisation",
+    "title": "Automatisation, Supervision et Installation Informatique",
+    "description": "Automatisation des processus industriels et intégration de solutions de supervision informatique.",
+    "icon": "IconAutomaticGearboxFilled",
+    "details": [
+      {
+        "id": "automates",
+        "description": "Utilisation d’automates Schneider Electric, Siemens, IFM Electronic."
+      },
+      {
+        "id": "supervision",
+        "description": "Logiciels PC Vue, Vijeo Citect, WinCC pour la gestion des équipements."
+      },
+      {
+        "id": "informatique",
+        "description": "Mise en place de solutions informatiques pour le contrôle et la supervision."
+      }
+    ]
+  },
+  {
+    "id": "risques-industriels",
+    "title": "Risques Industriels",
+    "description": "Gestion et prévention des risques industriels pour assurer la sécurité des installations.",
+    "icon": "IconUserShield",
+    "details": [
+      {
+        "id": "signalisation",
+        "description": "Installation de signalisation horizontale et verticale."
+      },
+      {
+        "id": "revetements",
+        "description": "Application de traitements anticorrosion, sablage, résine époxy."
+      },
+      {
+        "id": "securite-incendie",
+        "description": "Étude et installation de systèmes de sécurité incendie : robinets d’incendie armés, extincteurs, détection incendie, extinction automatique à gaz."
+      }
+    ]
+  },
+  {
+    "id": "sav",
+    "title": "Service Après-Vente (SAV)",
+    "description": "Assistance technique rapide pour maintenir la performance des installations.",
+    "icon": "IconProgressHelp",
+    "details": [
+      {
+        "id": "interventions",
+        "description": "Interventions rapides en cas de panne."
+      },
+      {
+        "id": "maintenance",
+        "description": "Programmes de maintenance préventive pour assurer la longévité des équipements."
+      }
+    ]
+  },
+  {
+    "id": "vente-ifm",
+    "title": "Vente de Matériels IFM Electronic",
+    "description": "Distribution de produits IFM Electronic pour divers besoins industriels.",
+    "icon": "IconProgressAlert",
+    "details": [
+      {
+        "id": "capteurs",
+        "description": "Capteurs de position, pression, température, niveau, débit, vibration."
+      },
+      {
+        "id": "controle",
+        "description": "Systèmes bus AS-interface, contrôleurs de vitesse, connectique."
+      },
+      {
+        "id": "vision",
+        "description": "Systèmes de vision industrielle 2D et 3D, cellules optoélectroniques."
+      }
+    ]
+  }
+]

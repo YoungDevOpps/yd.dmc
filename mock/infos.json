@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Adresse",
+    "description": [
+      "11 BP 1381 Abidjan 11, Boulevard du Gabon, Marcory Cité Hibiscus, Abidjan, Côte d'Ivoire"
+    ],
+    "icon": "IconMapPin",
+    "iconHoverColor": "emerald"
+  },
+  {
+    "label": "Phone",
+    "description": ["+225 07 58 53 71 43", "+225 27 21 28 04 72"],
+    "icon": "IconPhone",
+    "iconHoverColor": "violet"
+  },
+  {
+    "label": "Email",
+    "description": ["info@dmc-ci.com"],
+    "icon": "IconMail",
+    "iconHoverColor": "orange"
+  }
+]

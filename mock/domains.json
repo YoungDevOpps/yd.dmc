@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Automatisme Industriel",
+    "description": "Description 0",
+    "image": "1.png"
+  },
+  {
+    "id": 2,
+    "name": "Electricité",
+    "description": "Description 1",
+    "image": "2.png"
+  },
+  {
+    "id": 3,
+    "name": "sécurité incendie",
+    "description": "Description 2",
+    "image": "3.png"
+  },
+  {
+    "id": 4,
+    "name": "vidéo surveillance",
+    "description": "Description 2",
+    "image": "4.png"
+  },
+  {
+    "id": 5,
+    "name": "instrumentation",
+    "description": "Description 2",
+    "image": "5.png"
+  },
+  {
+    "id": 6,
+    "name": "paratonnerre",
+    "description": "Description 2",
+    "image": "6.png"
+  },
+  {
+    "id": 7,
+    "name": "signalisation",
+    "description": "Description 2",
+    "image": "7.png"
+  },
+  {
+    "id": 8,
+    "name": "contrôle d'accès",
+    "description": "Description 2",
+    "image": "8.png"
+  }
+]
