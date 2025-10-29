@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
 //"postbuild": "next-sitemap --config next-sitemap.config.ts"
 const nextConfig: NextConfig = {
   // Permet de générer un site statique (si besoin)
-  // output: isExport ? "export" : undefined,
+  // output: "standalone",
 
   // Dossier de sortie du build
   // distDir: "build",

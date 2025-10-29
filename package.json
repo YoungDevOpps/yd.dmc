@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postbuild": "next-sitemap --config next-sitemap.config.ts"
+    "start:custom": "NODE_ENV=production node server.js",
+    "postbuild": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.2.0",
@@ -23,6 +24,7 @@
     "@tanstack/react-form": "^1.23.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "express": "^5.1.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.546.0",
     "motion": "^12.23.24",
