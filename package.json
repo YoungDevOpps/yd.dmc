@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "http://localhost:3000",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start",
     "lint": "eslint",
     "postbuild": "next-sitemap --config next-sitemap.config.ts"
   },

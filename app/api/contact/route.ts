@@ -42,13 +42,105 @@ export async function POST(req: Request) {
       subject: `Nouveau message de ${formData.name || "un utilisateur"}`,
       text: `
         Nom: ${formData.name || "N/A"}
+        Entreprise: ${formData.companyName || "N/A"}
         Email: ${formData.email || "N/A"}
+        Téléphone: ${formData.phone || "N/A"}
+        Sujet: ${formData.subject || "N/A"}
         Message: ${formData.message || "N/A"}
       `,
       html: `
-        <p><strong>Nom:</strong> ${formData.name || "N/A"}</p>
-        <p><strong>Email:</strong> ${formData.email || "N/A"}</p>
-        <p><strong>Message:</strong> ${formData.message || "N/A"}</p>
+       <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f1f5f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+    }
+
+    .header {
+      background: linear-gradient(90deg, #006699, #3b82f6);
+      padding: 25px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .fields {
+      padding: 20px 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .fields p {
+      margin: 0;
+      font-size: 16px;
+      color: #1e293b;
+    }
+
+    .fields p strong {
+      display: inline-block;
+      min-width: 100px;
+      color: #0369a1;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .message-box {
+      background: #e0f2fe;
+      margin: 0 25px 20px 25px;
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #0f172a;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #64748b;
+      text-align: center;
+      padding: 15px;
+    }
+
+  </style>
+        <div class="email-container">
+          <div class="header">
+            <h2>Nouveau message visiteur</h2>
+          </div>
+
+          <div class="fields">
+            <p><strong>Nom :</strong> ${formData.name}</p>
+            <p><strong>Entreprise :</strong> ${formData.companyName}</p>
+            <p><strong>Email :</strong> ${formData.email}</p>
+            <p><strong>Téléphone :</strong> ${formData.phone}</p>
+            <p><strong>Sujet :</strong> ${formData.subject}</p>
+          </div>
+
+          <div class="message-box">
+            ${formData.message}
+          </div>
+
+          <p class="footer">
+            Ceci est un message envoyé depuis votre formulaire de contact.
+          </p>
+        </div>
       `,
     };
 

@@ -73,12 +73,13 @@ const formSchema = z.object({
 
 export default function ContactUsForm() {
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const [isPending, setIsPending] = React.useState(false);
 
   React.useEffect(() => {
     if (executeRecaptcha) {
       console.log("✅ reCAPTCHA v3 chargé et prêt !");
     } else {
-      console.warn("⚠️ reCAPTCHA pas encore prêt.");
+      // console.warn("⚠️ reCAPTCHA pas encore prêt.");
     }
   }, [executeRecaptcha]);
 
@@ -103,6 +104,8 @@ export default function ContactUsForm() {
           return;
         }
 
+        setIsPending(true); // ✅ Début de l'envoi
+
         const token = await executeRecaptcha("contactUs");
 
         const res = await fetch("/api/contact", {
@@ -125,6 +128,8 @@ export default function ContactUsForm() {
             ? err.message
             : "Erreur inconnue lors de l'envoi du message.";
         toast.error(message);
+      } finally {
+        setIsPending(false); // ✅ Fin de l'envoi
       }
     },
   });
@@ -175,6 +180,7 @@ export default function ContactUsForm() {
                     aria-invalid={isInvalid}
                     placeholder="Saisir votre nom"
                     autoComplete="off"
+                    disabled={isPending} // ✅ Désactive le champ pendant l'envoi
                   />
                   {isInvalid && <FieldError errors={field.state.meta.errors} />}
                 </Field>
@@ -201,6 +207,7 @@ export default function ContactUsForm() {
                     aria-invalid={isInvalid}
                     placeholder="Saisir le nom de votre entreprise"
                     autoComplete="off"
+                    disabled={isPending} // ✅ Désactive le champ pendant l'envoi
                   />
                   {isInvalid && <FieldError errors={field.state.meta.errors} />}
                 </Field>
@@ -230,6 +237,7 @@ export default function ContactUsForm() {
                     aria-invalid={isInvalid}
                     placeholder="Saisir votre email"
                     autoComplete="off"
+                    disabled={isPending} // ✅ Désactive le champ pendant l'envoi
                   />
                   {isInvalid && <FieldError errors={field.state.meta.errors} />}
                 </Field>
@@ -258,6 +266,7 @@ export default function ContactUsForm() {
                     aria-invalid={isInvalid}
                     placeholder="Saisir votre numéro de téléphone"
                     autoComplete="off"
+                    disabled={isPending} // ✅ Désactive le champ pendant l'envoi
                     ref={withMask("+225 99 999 999 99", {
                       placeholder: "_",
                       showMaskOnHover: true,
@@ -290,6 +299,7 @@ export default function ContactUsForm() {
                     aria-invalid={isInvalid}
                     placeholder="Saisir le sujet de votre message"
                     autoComplete="off"
+                    disabled={isPending} // ✅ Désactive le champ pendant l'envoi
                   />
                   {isInvalid && <FieldError errors={field.state.meta.errors} />}
                 </Field>
@@ -325,6 +335,7 @@ export default function ContactUsForm() {
                       rows={6}
                       className="min-h-28 max-h-28 resize-none overflow-auto"
                       aria-invalid={isInvalid}
+                      disabled={isPending} // ✅ Désactive le champ pendant l'envoi
                     />
                     <InputGroupAddon align="block-end">
                       <InputGroupText className="tabular-nums">
@@ -342,9 +353,26 @@ export default function ContactUsForm() {
         {/* Bouton d'envoi */}
         <div className="flex justify-center">
           <Field orientation="horizontal">
-            <Button type="submit" form="contactUs">
-              Envoyer
-              <IconSend2 className="ml-2" />
+            <Button type="submit" form="contactUs" disabled={isPending}>
+              {isPending ? (
+                <span className="flex items-center gap-2">
+                  Envoi...
+                  <motion.div
+                    className="w-4 h-4 border-2 border-white border-t-transparent rounded-full"
+                    animate={{ rotate: 360 }}
+                    transition={{
+                      repeat: Infinity,
+                      duration: 0.6,
+                      ease: "linear",
+                    }}
+                  />
+                </span>
+              ) : (
+                <>
+                  Envoyer
+                  <IconSend2 className="ml-2" />
+                </>
+              )}
             </Button>
           </Field>
         </div>

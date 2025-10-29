@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Permet de générer un site statique (si besoin)
-  output: "export",
+  // output: "export",
 
   // Dossier de sortie du build
   distDir: "build",

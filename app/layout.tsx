@@ -91,32 +91,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${comicNeue.className} antialiased`}>
-        {/* <GoogleReCaptchaProvider
-          reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-          scriptProps={{
-            async: true,
-            defer: true,
-            appendTo: "head",
-            nonce: undefined,
-          }}
-        > */}
-        <div className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
-          {/* NAVBAR */}
-          <Navbar />
-
-          {children}
-
-          {/* FOOTER */}
-          <footer className="bg-[#006699] text-white py-6 text-center">
-            <p>
-              &copy; {new Date().getFullYear()} DM COMPANY - Tous droits
-              réservés.
-            </p>
-          </footer>
-        </div>
-        {/* </GoogleReCaptchaProvider> */}
-      </body>
+      <body className={`${comicNeue.className} antialiased`}>{children}</body>
     </html>
   );
 }

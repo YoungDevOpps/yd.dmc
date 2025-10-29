@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://dmc-ci.com
-
-# Sitemaps
-Sitemap: https://dmc-ci.com/sitemap.xml

@@ -1,0 +1,10 @@
+{
+  "/(main)/about/page": "/about",
+  "/(main)/contact-us/page": "/contact-us",
+  "/(main)/our-activities/page": "/our-activities",
+  "/(main)/page": "/",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/contact/route": "/api/contact",
+  "/favicon.ico/route": "/favicon.ico"
+}
