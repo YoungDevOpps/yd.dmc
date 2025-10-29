@@ -1,26 +1,26 @@
 {
   "app": {
-    "[project]/app/(main)/about/page": [
-      "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
-      "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
-      "static/media/aee29876688b27b8-s.p.900acbe7.woff2"
-    ],
-    "[project]/app/(main)/contact-us/page": [
-      "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
-      "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
-      "static/media/aee29876688b27b8-s.p.900acbe7.woff2"
-    ],
-    "[project]/app/(main)/our-activities/page": [
-      "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
-      "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
-      "static/media/aee29876688b27b8-s.p.900acbe7.woff2"
-    ],
-    "[project]/app/(main)/page": [
-      "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
-      "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
-      "static/media/aee29876688b27b8-s.p.900acbe7.woff2"
-    ],
     "[project]/app/_not-found/page": [
+      "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
+      "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
+      "static/media/aee29876688b27b8-s.p.900acbe7.woff2"
+    ],
+    "[project]/app/about/page": [
+      "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
+      "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
+      "static/media/aee29876688b27b8-s.p.900acbe7.woff2"
+    ],
+    "[project]/app/contact-us/page": [
+      "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
+      "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
+      "static/media/aee29876688b27b8-s.p.900acbe7.woff2"
+    ],
+    "[project]/app/our-activities/page": [
+      "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
+      "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
+      "static/media/aee29876688b27b8-s.p.900acbe7.woff2"
+    ],
+    "[project]/app/page": [
       "static/media/134948925f7580b3-s.p.74f4e0e3.woff2",
       "static/media/edb82671f1e8f812-s.p.86d5aefd.woff2",
       "static/media/aee29876688b27b8-s.p.900acbe7.woff2"

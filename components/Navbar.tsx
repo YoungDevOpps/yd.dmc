@@ -5,9 +5,12 @@ import Image from "next/image";
 import DesktopMenu from "@/components/menu/DesktopMenu";
 import MobileMenu from "./menu/MobileMenu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
+
+  const pathname = usePathname();
 
   // Effet sticky avec changement de style au scroll
   React.useEffect(() => {
@@ -23,6 +26,16 @@ export default function Navbar() {
   }, []);
 
   const navlinksFiltered = navlinks.filter((item) => item.path !== "/");
+
+  // ❌ Correction ici : on vérifie si un des paths correspond au pathname
+  const isHiddenPage = navlinks.some((item) => item.path === pathname);
+
+  if (!isHiddenPage) {
+    console.log("Hidden page");
+    return null;
+  } else {
+    console.log("Visible page", pathname);
+  }
 
   return (
     <nav

@@ -28,12 +28,12 @@ export async function POST(req: Request) {
     //   hostname: "ton-domaine.com"
     // }
 
-    // if (!data.success || data.score < 0.5) {
-    //   return NextResponse.json(
-    //     { error: "Suspicious activity detected (possible bot)." },
-    //     { status: 403 }
-    //   );
-    // }
+    if (!data.success || data.score < 0.5) {
+      return NextResponse.json(
+        { error: "Suspicious activity detected (possible bot)." },
+        { status: 403 }
+      );
+    }
 
     // 2️⃣ Préparation de l'email
     const mailOptions = {

@@ -5,8 +5,9 @@ import "./style.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import Navbar from "@/components/Navbar";
+import ToasterSonner from "@/components/ToasterSonner";
+import Footer from "@/components/Footer";
 
 const comicNeue = Comic_Neue({
   variable: "--font-comic-neue",
@@ -91,7 +92,16 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${comicNeue.className} antialiased`}>{children}</body>
+      <body className={`${comicNeue.className} antialiased`}>
+        {/* NAVBAR */}
+        <Navbar />
+
+        {children}
+
+        {/* FOOTER */}
+        <Footer />
+        <ToasterSonner />
+      </body>
     </html>
   );
 }

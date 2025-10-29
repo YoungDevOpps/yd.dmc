@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+// const isExport = process.env.NEXT_OUTPUT === "export";
+
 const nextConfig: NextConfig = {
   // Permet de générer un site statique (si besoin)
-  // output: "export",
+  // output: isExport ? "export" : undefined,
 
   // Dossier de sortie du build
   distDir: "build",
