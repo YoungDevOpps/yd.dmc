@@ -7,9 +7,13 @@ export default function ReCaptchaProviderClient({
 }: {
   children: React.ReactNode;
 }) {
+  console.log(
+    "process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY",
+    process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+  );
   return (
     <GoogleReCaptchaProvider
-      reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+      reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
       scriptProps={{
         async: true,
         defer: true,

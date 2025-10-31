@@ -74,12 +74,14 @@ const formSchema = z.object({
 export default function ContactUsForm() {
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [isPending, setIsPending] = React.useState(false);
+  const [recaptchaReady, setRecaptchaReady] = React.useState(false);
 
   React.useEffect(() => {
     if (executeRecaptcha) {
       console.log("✅ reCAPTCHA v3 chargé et prêt !");
+      setRecaptchaReady(true);
     } else {
-      // console.warn("⚠️ reCAPTCHA pas encore prêt.");
+      console.warn("⚠️ reCAPTCHA pas encore prêt.");
     }
   }, [executeRecaptcha]);
 
@@ -97,6 +99,13 @@ export default function ContactUsForm() {
     // ✅ Fonction de soumission améliorée
     onSubmit: async ({ value }) => {
       try {
+        // 🔄 Attendre que le reCAPTCHA soit dispo (jusqu’à 2 secondes max)
+        let retries = 0;
+        while (!executeRecaptcha && retries < 10) {
+          await new Promise((r) => setTimeout(r, 200));
+          retries++;
+        }
+
         if (!executeRecaptcha) {
           toast.error(
             "reCAPTCHA non chargé. Réessayez dans quelques secondes."

@@ -30,12 +30,7 @@ export default function Navbar() {
   // ❌ Correction ici : on vérifie si un des paths correspond au pathname
   const isHiddenPage = navlinks.some((item) => item.path === pathname);
 
-  if (!isHiddenPage) {
-    console.log("Hidden page");
-    return null;
-  } else {
-    console.log("Visible page", pathname);
-  }
+  if (!isHiddenPage) return null;
 
   return (
     <nav
