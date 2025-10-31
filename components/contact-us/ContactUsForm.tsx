@@ -107,6 +107,12 @@ export default function ContactUsForm() {
         }
 
         if (!executeRecaptcha) {
+          console.log("⚠️ reCAPTCHA pas encore prêt.", retries);
+          console.log("⚠️ reCAPTCHA pas encore prêt.", executeRecaptcha);
+          console.log(
+            "⚠️ reCAPTCHA pas encore prêt.",
+            process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+          );
           toast.error(
             "reCAPTCHA non chargé. Réessayez dans quelques secondes."
           );
@@ -362,7 +368,11 @@ export default function ContactUsForm() {
         {/* Bouton d'envoi */}
         <div className="flex justify-center">
           <Field orientation="horizontal">
-            <Button type="submit" form="contactUs" disabled={isPending}>
+            <Button
+              type="submit"
+              form="contactUs"
+              disabled={isPending || !recaptchaReady}
+            >
               {isPending ? (
                 <span className="flex items-center gap-2">
                   Envoi...

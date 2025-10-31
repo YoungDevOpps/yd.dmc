@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
-  // Effet sticky avec changement de style au scroll
+  // Effet sticky avec changement de style au scroll (au dessus de 50px)
   React.useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
