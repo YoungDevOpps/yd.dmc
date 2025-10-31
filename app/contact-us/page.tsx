@@ -1,9 +1,8 @@
 import CarouselSection from "@/components/CarouselSection";
-import ContactUsForm from "@/components/contact-us/ContactUsSection";
 import ContactMapSection from "@/components/contact-us/ContactMapSection";
 import ContactInfosSection from "@/components/contact-us/ContactInfosSection";
 import { Metadata } from "next";
-import ReCaptchaProviderClient from "@/components/ReCaptchaProviderClient";
+import ContactUsClient from "@/components/contact-us/ContactUsClient";
 
 export const metadata: Metadata = {
   title: "Contact | DM COMPANY",
@@ -19,9 +18,7 @@ export default function ContactPage() {
       <ContactInfosSection />
 
       {/* Formulaire */}
-      <ReCaptchaProviderClient>
-        <ContactUsForm />
-      </ReCaptchaProviderClient>
+      <ContactUsClient />
 
       {/* Coordonnées et carte */}
       <ContactMapSection />
