@@ -17,7 +17,7 @@ import {
   InputGroupTextarea,
 } from "@/components/ui/input-group";
 import { motion } from "framer-motion";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { IconSend2 } from "@tabler/icons-react";
 import { withMask } from "use-mask-input";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";

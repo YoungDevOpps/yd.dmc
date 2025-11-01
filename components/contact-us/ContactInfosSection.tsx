@@ -8,7 +8,7 @@ export default function ContactInfosSection() {
   return (
     <section
       id="contact-infos"
-      className="container py-20 mx-auto px-6 h-fit flex items-center flex-col justify-start gap-4 "
+      className="container py-6 md:py-20 px-6 md:px-54  mx-auto  h-fit flex items-center flex-col justify-start gap-4 "
     >
       <motion.h2
         className="text-3xl font-bold text-center mb-2 text-primary"

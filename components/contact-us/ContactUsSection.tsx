@@ -1,5 +1,5 @@
 "use client";
-import ContactUsForm from "./ContactUsForm";
+import ContactUsForm from "@/components/contact-us/ContactUsForm";
 
 export default function ContactUsSection() {
   return (

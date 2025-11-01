@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { IconPlus } from "@tabler/icons-react";
@@ -37,6 +36,7 @@ export default function AboutSection() {
         Elle est spécialisée dans les domaines de l’électricité, de
         l’Automatisme et des Risques Industriels. Fort d’un parcours éprouvé, le
         Directeur a été d’abord responsable technique en 2003…
+        {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
       </motion.p>
       <Button className="cursor-pointer text-white">
         En savoir plus <IconPlus />
