@@ -22,6 +22,7 @@ import { IconSend2 } from "@tabler/icons-react";
 import { withMask } from "use-mask-input";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import React from "react";
+import SectionTitle from "../SectionTitle";
 
 const maxLengthMsg = 250;
 
@@ -150,21 +151,8 @@ export default function ContactUsForm() {
   });
 
   return (
-    <div>
-      <motion.h2
-        className="text-3xl text-center mb-8 flex flex-col items-center gap-4"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-      >
-        <span className="text-3xl md:text-4xl font-bold mb-2">
-          Dites-nous ce dont vous avez besoin
-        </span>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Accédez à tous nos documents officiels, guides et ressources
-        </p>
-      </motion.h2>
+    <>
+      <SectionTitle title="Contactez-nous" />
 
       <form
         id="contactUs"
@@ -396,6 +384,6 @@ export default function ContactUsForm() {
           </Field>
         </div>
       </form>
-    </div>
+    </>
   );
 }

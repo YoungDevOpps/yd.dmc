@@ -1,26 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
+import SectionWrapper from "../SectionWrapper";
+import SectionTitle from "../SectionTitle";
 export default function StorySection() {
   return (
-    <section
-      id="about"
-      className="container py-20 mx-auto px-6 min-h-[50vh] flex items-center flex-col justify-center gap-4"
-    >
-      <motion.h2
-        className="text-3xl font-bold text-center mb-8"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-      >
-        <span className="text-3xl md:text-4xl font-bold mb-2">
-          Petite{" "}
-          <span className="text-primary group relative">
-            histoire
-            <span className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-primary"></span>
-          </span>
-        </span>
-      </motion.h2>
+    <SectionWrapper id="about" variant="lightBg">
+      <SectionTitle title="Notre" highlight="histoire" />
       <motion.p
         className="text-justify max-w-3xl mx-auto text-lg leading-relaxed flex flex-col gap-4"
         initial={{ opacity: 0 }}
@@ -43,6 +28,6 @@ export default function StorySection() {
           cette marque.
         </span>
       </motion.p>
-    </section>
+    </SectionWrapper>
   );
 }

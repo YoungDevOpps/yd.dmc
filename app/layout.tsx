@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Comic_Neue } from "next/font/google";
 import "./globals.css";
 import "./style.css";
 
@@ -8,12 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Navbar from "@/components/Navbar";
 import ToasterSonner from "@/components/ToasterSonner";
 import Footer from "@/components/Footer";
-
-const comicNeue = Comic_Neue({
-  variable: "--font-comic-neue",
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-});
+import { defaultFont } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "DM COMPANY | Génie Électrique, Automatisme Industriel & Sécurité",
@@ -92,7 +86,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${comicNeue.className} antialiased`}>
+      <body className={`${defaultFont.className} antialiased`}>
         {/* NAVBAR */}
         <Navbar />
 

@@ -1,96 +1,15 @@
 "use client";
-// import {
-//   GoogleMap,
-//   LoadScript,
-//   Marker,
-//   InfoWindow,
-// } from "@react-google-maps/api";
-// import React from "react";
-
-// Définir le type pour une location
-// interface Location {
-//   id: number;
-//   name: string;
-//   position: {
-//     lat: number;
-//     lng: number;
-//   };
-// }
+import React from "react";
 
 const mapContainerStyle = {
   width: "100%",
   height: "100%",
 };
 
-// const defaultCenter = {
-//   lat: 5.297858237780614,
-//   lng: -3.9817104884929635,
-// };
-
-// const locations: Location[] = [
-//   {
-//     id: 1,
-//     name: "Abidjan - Marcory",
-//     position: { lat: 5.297858237780614, lng: -3.9817104884929635 },
-//   },
-//   {
-//     id: 2,
-//     name: "Abidjan - Djorobité",
-//     position: { lat: 5.386681105173032, lng: -3.919814846162705 },
-//   },
-// ];
-
 export default function MapSection() {
-  // const [selectedLocation, setSelectedLocation] =
-  //   React.useState<Location | null>(null);
-
   return (
-    <section
-      id="contact"
-      className="py-16 mx-auto px-6 h-screen bg-gray-100 flex flex-col justify-center items-center relative overflow-hidden"
-    >
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          Où nous{" "}
-          <span className="text-primary group relative">
-            trouver{" "}
-            <span className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-primary"></span>
-          </span>
-        </h2>
-        <p className="text-gray-600">
-          Découvrez notre expertise à travers différents domaines
-          d’intervention.
-        </p>
-      </div>
-      <div className="container w-full h-full rounded-xl overflow-hidden shadow-lg">
-        {/* <LoadScript
-          googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
-        >
-          <GoogleMap
-            mapContainerStyle={mapContainerStyle}
-            zoom={12}
-            center={defaultCenter}
-          >
-            {locations.map((location) => (
-              <Marker
-                key={location.id}
-                position={location.position}
-                onClick={() => setSelectedLocation(location)}
-              />
-            ))}
-
-            {selectedLocation && (
-              <InfoWindow
-                position={selectedLocation.position}
-                onCloseClick={() => setSelectedLocation(null)}
-              >
-                <div>
-                  <h3 className="font-bold">{selectedLocation.name}</h3>
-                </div>
-              </InfoWindow>
-            )}
-          </GoogleMap>
-        </LoadScript> */}
+    <section id="contact-map" className="h-[80vh]">
+      <div className="flex items-center justify-center h-full">
         <div className="relative overflow-hidden w-full h-full">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.7758588732977!2d-3.9843336886793885!3d5.2976338946584605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ec02099d3681%3A0x21e24ac735e965cb!2sDM%20COMPANY!5e0!3m2!1sfr!2sci!4v1761370618987!5m2!1sfr!2sci"
@@ -124,6 +43,24 @@ export default function MapSection() {
             </svg>
           </button>
         </div>
+        {/* <div className="w-1/3 h-full py-10 px-8 flex flex-col">
+          <h2 className="text-2xl font-semibold mb-12 text-center">
+            Contactez-nous
+          </h2>
+          <div className="flex flex-1 flex-col justify-around">
+            {contactsInfo.map((contact, i) => (
+              <div
+                key={i}
+                className="flex items-center mb-4 gap-6 border-b border-gray-300 pb-4"
+              >
+                <span className="self-stretch">
+                  <DynamicIcon iconName={contact.icon} className="h-8 w-8" />
+                </span>
+                <p>{contact.description}</p>
+              </div>
+            ))}
+          </div>
+        </div> */}
       </div>
     </section>
   );

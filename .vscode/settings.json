@@ -6,7 +6,7 @@
     "titleBar.inactiveForeground": "#ffffff"
   },
   "cSpell.language": "en,fr",
-  "cSpell.enabled": true,
+  "cSpell.enabled": false,
   "cSpell.allowCompoundWords": true,
   "cSpell.userWords": [
     "Nextjs",

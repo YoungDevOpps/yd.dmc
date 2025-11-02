@@ -1,5 +1,5 @@
 import CarouselSection from "@/components/CarouselSection";
-import ContactMapSection from "@/components/contact-us/ContactMapSection";
+import ContactMapSection from "@/components/MapSection";
 import ContactInfosSection from "@/components/contact-us/ContactInfosSection";
 import { Metadata } from "next";
 import ContactUsClient from "@/components/contact-us/ContactUsClient";

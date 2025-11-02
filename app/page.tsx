@@ -1,9 +1,9 @@
-import AboutSection from "@/components/AboutSection";
-import DomainsSection from "@/components/DomainsSection";
-import PartnersSection from "@/components/PartnersSection";
-import HomeCarouselSection from "@/components/HomeCarouselSection";
+import AboutSection from "@/components/home/AboutSection";
+import DomainsSection from "@/components/home/DomainsSection";
+import PartnersSection from "@/components/home/PartnersSection";
+import HomeCarouselSection from "@/components/home/HomeCarouselSection";
 import { Metadata } from "next";
-import ContactMapSection from "@/components/contact-us/ContactMapSection";
+import MapSection from "@/components/MapSection";
 
 export const metadata: Metadata = {
   title: "Accueil | DM COMPANY",
@@ -29,7 +29,7 @@ const HomePage = () => {
       {/* <RecentSection /> */}
 
       {/* MAP */}
-      <ContactMapSection />
+      <MapSection />
     </div>
   );
 };

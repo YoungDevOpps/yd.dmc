@@ -1,9 +1,9 @@
-import StorySection from "@/components/about/storySection";
 import TargetSection from "@/components/about/TargetSection";
 import ValuesSection from "@/components/about/ValuesSection";
 import CarouselSection from "@/components/CarouselSection";
 import DocumentsSection from "@/components/about/DocumentsSection";
 import { Metadata } from "next";
+import StorySection from "@/components/about/StorySection";
 
 export const metadata: Metadata = {
   title: "À propos | DM COMPANY",
@@ -23,17 +23,13 @@ export default function AboutPage() {
       <StorySection />
 
       {/* TARGET SECTION */}
-      <div className="bg-gray-100">
-        <TargetSection />
-      </div>
+      <TargetSection />
 
       {/* VALUES SECTION */}
       <ValuesSection />
 
       {/* DOCUMENTS SECTION */}
-      <div className="bg-gray-100">
-        <DocumentsSection />
-      </div>
+      <DocumentsSection />
     </>
   );
 }

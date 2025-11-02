@@ -25,7 +25,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navlinksFiltered = navlinks.filter((item) => item.path !== "/");
+  const navlinksFiltered = navlinks.filter((item) => item.path !== "");
 
   // ❌ Correction ici : on vérifie si un des paths correspond au pathname
   const isHiddenPage = navlinks.some((item) => item.path === pathname);

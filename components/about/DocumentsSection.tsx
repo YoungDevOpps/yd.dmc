@@ -1,9 +1,11 @@
 "use client";
 
 import documents from "@/mock/documents.json";
-import { Search, DownloadCloud } from "lucide-react";
+import { Search } from "lucide-react";
 import DocumentCard from "./DocumentCard";
 import { motion } from "framer-motion";
+import SectionWrapper from "../SectionWrapper";
+import SectionTitle from "../SectionTitle";
 
 export default function DocumentsSection() {
   //   const [searchTerm, setSearchTerm] = useState("");
@@ -29,36 +31,16 @@ export default function DocumentsSection() {
   //   }, [searchTerm, selectedCategory]);
 
   return (
-    <section
-      id="documents"
-      className="container py-20 mx-auto px-6 min-h-[50vh] flex items-center flex-col justify-center gap-4 "
-    >
-      <div className="container mx-auto px-4 ">
-        {/* En-tête */}
-        <motion.h2
-          className="text-3xl text-center mb-8 flex flex-col items-center gap-4"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-        >
-          <div className="flex justify-center">
-            <DownloadCloud className="w-12 h-12 text-primary" />
-          </div>
-          <span className="text-3xl md:text-4xl font-bold mb-2">
-            Nos{" "}
-            <span className="text-primary group relative mb-4">
-              Documents et Ressources
-              <span className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-primary"></span>
-            </span>
-          </span>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Accédez à tous nos documents officiels, guides et ressources
-          </p>
-        </motion.h2>
+    <SectionWrapper id="documents" variant="darkBg">
+      {/* En-tête */}
+      <SectionTitle
+        title="Nos"
+        highlight="Documents et Ressources"
+        desc="Accédez à tous nos documents officiels, guides et ressources"
+      />
 
-        {/* Statistiques */}
-        {/* <div className="mb-6 flex items-center justify-between">
+      {/* Statistiques */}
+      {/* <div className="mb-6 flex items-center justify-between">
           <p className="text-gray-600">
             {filteredDocuments.length} document
             {filteredDocuments.length > 1 ? "s" : ""} trouvé
@@ -74,30 +56,29 @@ export default function DocumentsSection() {
           )}
         </div> */}
 
-        {/* Liste des documents */}
-        <div className="flex flex-wrap justify-center items-center gap-8 ">
-          {documents.map((document) => (
-            <DocumentCard key={document.id} document={document} />
-          ))}
-        </div>
-
-        {/* Message si aucun document trouvé */}
-        {documents.length === 0 && (
-          <div className="text-center py-12">
-            <div className="text-gray-400 mb-4">
-              <Search className="w-16 h-16 mx-auto" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Aucun document trouvé
-            </h3>
-            <p className="text-gray-600">
-              Aucun document ne correspond à votre recherche. Essayez d{"''"}
-              utiliser d{"''"}autres termes.
-            </p>
-          </div>
-        )}
+      {/* Liste des documents */}
+      <div className="flex flex-wrap justify-center items-center gap-8">
+        {documents.map((document) => (
+          <DocumentCard key={document.id} document={document} />
+        ))}
       </div>
-    </section>
+
+      {/* Message si aucun document trouvé */}
+      {documents.length === 0 && (
+        <div className="text-center py-12">
+          <div className="text-gray-400 mb-4">
+            <Search className="w-16 h-16 mx-auto" />
+          </div>
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            Aucun document trouvé
+          </h3>
+          <p className="text-gray-600">
+            Aucun document ne correspond à votre recherche. Essayez d{"''"}
+            utiliser d{"''"}autres termes.
+          </p>
+        </div>
+      )}
+    </SectionWrapper>
   );
 }
 

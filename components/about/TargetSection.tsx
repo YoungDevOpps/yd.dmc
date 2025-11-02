@@ -2,29 +2,14 @@
 import { motion } from "framer-motion";
 import targets from "@/mock/objectifs.json";
 import { IconTargetArrow } from "@tabler/icons-react";
+import SectionWrapper from "../SectionWrapper";
+import SectionTitle from "../SectionTitle";
 
 export default function TargetSection() {
   return (
-    <section
-      id="target"
-      className="container py-20 mx-auto px-6 min-h-[50vh] flex items-center flex-col justify-center gap-4 bg-gray-100"
-    >
+    <SectionWrapper id="target" variant="darkBg">
       <div className="mx-auto px-0 md:px-30 xl:px-50">
-        <motion.h2
-          className="text-3xl font-bold text-center mb-8"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-        >
-          <span className="text-3xl md:text-4xl font-bold mb-2">
-            Nos{" "}
-            <span className="text-primary group relative">
-              missions et objectifs
-              <span className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-primary"></span>
-            </span>
-          </span>
-        </motion.h2>
+        <SectionTitle title="Nos" highlight="missions" />
 
         <motion.div
           className="text-justify max-w-3xl mx-auto text-lg leading-relaxed flex flex-col gap-4"
@@ -57,6 +42,6 @@ export default function TargetSection() {
           </ul>
         </motion.div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
