@@ -21,7 +21,6 @@ export default function AboutSection() {
         Elle est spécialisée dans les domaines de l’électricité, de
         l’Automatisme et des Risques Industriels. Fort d’un parcours éprouvé, le
         Directeur a été d’abord responsable technique en 2003…
-        {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
       </motion.p>
       <div className="flex items-center justify-center">
         <Button className="cursor-pointer text-white">

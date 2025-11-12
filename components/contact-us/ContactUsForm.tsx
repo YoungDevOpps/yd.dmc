@@ -108,15 +108,10 @@ export default function ContactUsForm() {
         }
 
         if (!executeRecaptcha) {
-          console.log("⚠️ reCAPTCHA pas encore prêt.", retries);
-          console.log("⚠️ reCAPTCHA pas encore prêt.", executeRecaptcha);
-          console.log(
-            "⚠️ reCAPTCHA pas encore prêt.",
-            process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
-          );
           toast.error(
-            "reCAPTCHA non chargé. Réessayez dans quelques secondes."
+            "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer plus tard."
           );
+          console.warn("reCAPTCHA non chargé.");
           return;
         }
 
@@ -151,7 +146,7 @@ export default function ContactUsForm() {
   });
 
   return (
-    <>
+    <div className="max-w-5xl mx-auto">
       <SectionTitle title="Contactez-nous" />
 
       <form
@@ -384,6 +379,6 @@ export default function ContactUsForm() {
           </Field>
         </div>
       </form>
-    </>
+    </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import SectionWrapper from "../SectionWrapper";
-import SectionTitle from "../SectionTitle";
+import SectionWrapper from "@/components/SectionWrapper";
+import SectionTitle from "@/components/SectionTitle";
 export default function StorySection() {
   return (
     <SectionWrapper id="about" variant="lightBg">

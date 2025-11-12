@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "src": "/c1.jpg",
+    "alt": "Image 1 Carousel"
+  },
+  {
+    "id": 2,
+    "src": "/c2.jpg",
+    "alt": "Image 2 Carousel"
+  }
+]

@@ -6,6 +6,8 @@ import domains from "@/mock/domains.json";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
+import imgCarousel from "@/mock/imageCarousel.json";
+
 export default function HomeCarouselSection() {
   const sliderSettings = {
     dots: true,
@@ -18,8 +20,6 @@ export default function HomeCarouselSection() {
     fade: true,
   };
 
-  const imgCarousel = ["/c1.jpg", "/c2.jpg"];
-
   return (
     <section className="relative w-full h-screen overflow-hidden bg-transparent">
       <Slider {...sliderSettings}>
@@ -28,9 +28,12 @@ export default function HomeCarouselSection() {
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
               <Image
                 fill
-                src={item}
-                alt="Domaine"
-                className="w-full h-full object-cover"
+                src={item.src}
+                alt={`Domaine ${i + 1}`}
+                className="object-cover"
+                priority={i === 0}
+                loading={i === 0 ? "eager" : "lazy"}
+                sizes="100vw"
               />
             </div>
           </div>
