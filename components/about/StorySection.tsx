@@ -14,18 +14,22 @@ export default function StorySection() {
         viewport={{ once: true }}
       >
         <span>
-          DM COMPANY est une SA créée à l’initiative de M DJE Yao Magloire et
-          soutenue par une équipe de professionnels de plus de 10ans
-          d’expérience. Elle est spécialisée dans les domaines de l’électricité,
-          de l’Automatisme et des Risques Industriels. Fort d’un parcours
-          éprouvé, le Directeur a été d’abord responsable technique en 2003.
-          Depuis quelques années, une équipe dynamique et professionnelle de
-          jeunes été consolidée par les défis des avancées technologiques.
+          DM COMPANY est une société anonyme fondée par M. DJE Yao Magloire, et
+          portée par une équipe de professionnels cumulant plus de dix ans
+          d’expérience. L’entreprise est spécialisée dans les domaines de
+          l’électricité, de l’automatisme et des risques industriels.
         </span>
         <span>
-          Aujourd’hui partenaire exclusif en Côte d’Ivoire reconnu mondialement
-          de IFM electronic, nous commercialisons et installons le matériels de
-          cette marque.
+          Forte d’un parcours solide, son Directeur a débuté comme responsable
+          technique dès 2003. Au fil des années, l’entreprise s’est entourée
+          d’une équipe jeune, dynamique et hautement professionnelle, forgée par
+          les défis et les évolutions technologiques du secteur.
+        </span>{" "}
+        <span>
+          Aujourd’hui, DM COMPANY est le partenaire exclusif en Côte d’Ivoire de
+          IFM Electronic, une marque reconnue à l’échelle mondiale. À ce titre,
+          nous commercialisons, intégrons et installons l’ensemble de leurs
+          solutions et équipements.
         </span>
       </motion.p>
     </SectionWrapper>
