@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 
     const data = await res.json();
 
-    console.log("data =>", data);
+    // console.log("data =>", data);
 
     // data contient un objet comme :
     // {
@@ -148,7 +148,7 @@ export async function POST(req: Request) {
     await transporter.sendMail(mailOptions);
 
     // ✅ Si tout est bon, tu traites ton message normalement
-    console.log("Formulaire validé :", formData);
+    // console.log("Formulaire validé :", formData);
 
     return NextResponse.json({ message: "Message reçu avec succès !" });
   } catch (error) {
