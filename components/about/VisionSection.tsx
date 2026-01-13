@@ -9,7 +9,6 @@ import { BadgeCheck } from "lucide-react";
 export default function VisionSection() {
   return (
     <SectionWrapper id="target" variant="darkBg">
-      {" "}
       <SectionTitle title="Notre " highlight="Vision" />
       <motion.div
         className="text-justify max-w-3xl mx-auto text-lg leading-relaxed flex flex-col gap-4"

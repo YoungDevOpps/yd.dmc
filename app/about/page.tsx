@@ -1,5 +1,5 @@
 import TargetSection from "@/components/about/TargetSection";
-import ValuesSection from "@/components/about/ValuesSection2";
+import ValuesSection from "@/components/about/ValuesSection";
 import CarouselSection from "@/components/CarouselSection";
 import DocumentsSection from "@/components/about/DocumentsSection";
 import { Metadata } from "next";
