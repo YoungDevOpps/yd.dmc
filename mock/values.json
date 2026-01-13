@@ -1,32 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Professionnalisme",
-    "description": "L'excellence opérationnelle comme standard. Nous conjuguons expertise technique et rigueur méthodologique pour délivrer des solutions qui surpassent les attentes.",
-    "icon": "IconAward"
+    "title": "Le professionnalisme",
+    "ext": "png"
   },
   {
     "id": 2,
-    "title": "Respect des engagements",
-    "description": "Notre parole est notre signature. Chaque délai, chaque spécification, chaque engagement contractuel est honoré avec une précision irréprochable.",
-    "icon": "IconHandshake"
+    "title": "Le respect des engagements",
+    "ext": "png"
   },
   {
     "id": 3,
-    "title": "Intégrité",
-    "description": "Gardien de votre confiance, nous érigeons la confidentialité et l'éthique en principes intangibles. Votre patrimoine informationnel est protégé avec la plus grande vigilance.",
-    "icon": "IconShieldCheck"
+    "title": "L'éthique",
+    "ext": "png"
   },
   {
     "id": 4,
-    "title": "Unité",
-    "description": "Synergie d'expertises, force collective. Notre intelligence collective transforme les défis complexes en succès partagés, où chaque complémentarité devient un avantage compétitif.",
-    "icon": "IconUsers"
+    "title": "La satisfaction client",
+    "ext": "png"
   },
   {
     "id": 5,
-    "title": "Solidarité",
-    "description": "Une vision commune, des résultats partagés. Notre cohésion d'équipe et notre alignement stratégique garantissent une performance durable et une agilité exceptionnelle.",
-    "icon": "IconHeartHandshake"
+    "title": "La communication",
+    "ext": "png"
+  },
+  {
+    "id": 6,
+    "title": "La solidarité",
+    "ext": "png"
+  },
+  {
+    "id": 7,
+    "title": "La performance",
+    "ext": "png"
+  },
+  {
+    "id": 8,
+    "title": "La polyvalence",
+    "ext": "png"
   }
 ]

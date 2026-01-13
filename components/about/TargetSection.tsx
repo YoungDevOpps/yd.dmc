@@ -4,10 +4,11 @@ import targets from "@/mock/objectifs.json";
 import { IconTargetArrow } from "@tabler/icons-react";
 import SectionWrapper from "../SectionWrapper";
 import SectionTitle from "../SectionTitle";
+import { BadgeCheck } from "lucide-react";
 
 export default function TargetSection() {
   return (
-    <SectionWrapper id="target" variant="darkBg">
+    <SectionWrapper id="target" variant="lightBg">
       <div className="mx-auto px-0 md:px-30 xl:px-50">
         <SectionTitle title="Nos" highlight="missions" />
 
@@ -19,22 +20,43 @@ export default function TargetSection() {
           viewport={{ once: true }}
         >
           <span>
-            DM COMPANY s’est spécialisée dans l’électricité HTA et BT. Elle
-            développe essentiellement dans des projets d’installation
-            industrielle et tertiaire, d’automatisme (Schneider Electric et
-            Siemens), informatique et des études de projets (CCTP,
-            Budgétisation, schémas électriques, liste de matériel). Elle innove
-            à travers des solutions de câblage simple, des systèmes de
-            diagnostic de machine performants, adaptés et encore méconnus du
-            marché national. Elle forme également à l’utilisation des ces
-            produits.
+            DM COMPANY est spécialisée dans l’électricité HTA et BT. Elle
+            développe :
           </span>
-          <span>Les objectif qu’elle vise sont:</span>
+          <ul className="">
+            <li className="flex items-start gap-2">
+              <span>
+                <BadgeCheck />
+              </span>
+              Des projets d’installation industrielle, tertiaire
+            </li>
+            <li className="flex items-start gap-2">
+              <span>
+                <BadgeCheck />
+              </span>
+              Des projets d’automatisme (Schneider Electric et Siemens)
+            </li>
+            <li className="flex items-start gap-2">
+              <span>
+                <BadgeCheck />
+              </span>
+              De courant faible (réseau informatique, téléphonique, vidéo
+              surveillance, contrôle d’accès et système de sécurité incendie)
+            </li>
+            <li className="flex items-start gap-2">
+              <span>
+                <BadgeCheck />
+              </span>
+              Des études de projets (CCTP, Budgétisation, schémas électriques,
+              liste de matériel).
+            </li>
+          </ul>
+          <span>Nos principales missions sont de :</span>
           <ul>
             {targets.map((target) => (
               <li key={target.id} className="flex items-center gap-2">
                 <span>
-                  <IconTargetArrow />
+                  <IconTargetArrow className="" />
                 </span>
                 {target.title}
               </li>

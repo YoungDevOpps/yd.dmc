@@ -7,7 +7,7 @@ import SectionTitle from "../SectionTitle";
 
 export default function PartnersSection() {
   return (
-    <SectionWrapper id="partners" variant="lightBg">
+    <SectionWrapper id="partners" variant="darkBg">
       <SectionTitle title="Ils nous font" highlight="de confiance" />
       <div className="grid grid-cols-2 md:grid-cols-5 gap-8 place-items-center">
         {partners.map((partner, i) => (
@@ -15,8 +15,8 @@ export default function PartnersSection() {
             key={i}
             src={"/partners/" + partner.id + ".png"}
             alt="Partenaire"
-            className="h-16 grayscale hover:grayscale-0 transition"
-            whileHover={{ scale: 1.1 }}
+            className="h-16"
+            whileHover={{ scale: 0.9 }}
           />
         ))}
       </div>

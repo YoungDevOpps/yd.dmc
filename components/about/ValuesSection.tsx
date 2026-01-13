@@ -13,7 +13,7 @@ import SectionTitle from "../SectionTitle";
 
 export default function ValuesSection() {
   return (
-    <SectionWrapper id="values" variant="lightBg">
+    <SectionWrapper id="values" variant="darkBg">
       <SectionTitle title="Nos" highlight="valeurs" />
       <motion.div
         className="text-justify w-full md:w-3xl mx-auto text-lg leading-relaxed flex flex-col gap-4"

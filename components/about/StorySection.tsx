@@ -14,8 +14,8 @@ export default function StorySection() {
         viewport={{ once: true }}
       >
         <span>
-          DM COMPANY est une société anonyme fondée par M. DJE Yao Magloire, et
-          portée par une équipe de professionnels cumulant plus de dix ans
+          DM COMPANY est une société anonyme fondée par M. DJE Yao, et portée
+          par une équipe de professionnels cumulant plus de dix ans
           d’expérience. L’entreprise est spécialisée dans les domaines de
           l’électricité, de l’automatisme et des risques industriels.
         </span>
