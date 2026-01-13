@@ -7,7 +7,7 @@ import SectionTitle from "../SectionTitle";
 
 export default function PartnersSection() {
   return (
-    <SectionWrapper id="partners" variant="darkBg">
+    <SectionWrapper id="partners" variant="lightBg">
       <SectionTitle title="Ils nous font" highlight="de confiance" />
       <div className="grid grid-cols-2 md:grid-cols-5 gap-8 place-items-center">
         {partners.map((partner, i) => (
